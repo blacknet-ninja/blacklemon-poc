@@ -61,7 +61,8 @@ void affine(std::vector<std::vector<lbcrypto::Ciphertext<lbcrypto::DCRTPoly>>>& 
             for(int m = 0; m < degree; m++){
                 vec_ints[m] = signals_b[idx + m][l];
             }
-            output[i][l] = context->EvalSub(output[i][l], context->MakePackedPlaintext(vec_ints)); 
+            auto pt = context->MakePackedPlaintext(vec_ints);
+            output[i][l] = context->EvalSub(output[i][l], pt);
         }
     }
 }

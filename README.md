@@ -14,10 +14,10 @@ This is a proof of concept implementation of SophOMR, augmented with BlackLemon 
 - C++ build environment
 - CMake build infrastructure
 - [NTL](https://libntl.org/) library
-- [OpenFHE](https://github.com/openfheorg/openfhe-development) library (tested with v1.2.3)
+- [OpenFHE](https://github.com/openfheorg/openfhe-development) library (tested with v1.4.2)
 - [HEXL](https://github.com/intel/hexl) library
 
-⚠️ To implement ring-switching, we use OpenFHE in a manner not officially supported by its APIs, which may be incompatible with OpenFHE versions beyond 1.2.0.
+⚠️ To implement ring-switching, we use OpenFHE in a manner not officially supported by its APIs, which may be incompatible with OpenFHE versions beyond 1.4.0.
 
 ### Scripts to install the dependencies and build the library
 
